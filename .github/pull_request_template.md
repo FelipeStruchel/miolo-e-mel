@@ -36,6 +36,17 @@ Se seguiu a spec ao pé da letra e nada mudou, escreva "Segui a spec sem altera�
 Passos que outra pessoa pode repetir para provar que funciona: dado [situação], quando [ação], então [resultado esperado].
 Inclua os COMANDOS que você rodou e o que apareceu (ex.: curl http://localhost:3000/health -> {"status":"ok"}).
 "Testei e funcionou" não vale: quem lê precisa conseguir repetir.
+
+Exemplo preenchido (rota de saúde da api):
+1. **Dado** a api rodando com `pnpm --filter api start:dev`,
+2. **Quando** eu rodo `curl http://localhost:3000/health`,
+3. **Então** a resposta é `{"status":"ok"}` (cole a saída do terminal, ou um print do Insomnia, logo abaixo).
+
+Como registrar sem dar trabalho:
+- Cole a saída do terminal como bloco de código, ou tire um print do Insomnia/navegador no momento em que testar (não depois).
+- Escreva uma legenda curta dizendo o que o print prova ("token válido -> 200", "sem token -> 401").
+- Se você pediu ajuda a uma IA para escrever o PR, cole nela a saída real do que você rodou: ela documenta o que foi feito, mas só registra o que foi testado se você mostrar o resultado.
+- O CI verde não substitui isto: ele não sobe o Docker nem abre o app. Se a subtask pede, rode e registre você mesmo.
 -->
 
 1. **Dado** ...
