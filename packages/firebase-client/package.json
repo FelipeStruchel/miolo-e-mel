@@ -12,7 +12,7 @@
   "prettier": "@miolo-e-mel/config/prettier.json",
   "devDependencies": {
     "@miolo-e-mel/config": "workspace:*",
-    "@types/node": "^24.19.1",
+    "@types/node": "^26.6.4",
     "eslint": "^9.39.5"
   },
   "dependencies": {
